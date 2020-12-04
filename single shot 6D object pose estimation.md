@@ -56,9 +56,9 @@ To stabilize the training, the posotion $x=[x,y,z]^{T}$ of the object is estimat
 
 $$\mathcal{L}_{pos}=||x-\hat{x}||^2$$, with $$||.||$$ being the $L^2$ norm.
 
-$\mathcal{L}_{ori1}=\parallel \phi - \hat{\phi} \parallel^2, \lambda_4=1$, with $\varphi=[\varphi_1, \varphi_2, \varphi_3]$
+$$\mathcal{L}_{ori1}=\parallel \phi - \hat{\phi} \parallel^2, \lambda_4=1$$, with $$\varphi=[\varphi_1, \varphi_2, \varphi_3]$$
 
-==Second, $\mathcal{L}_{ori2}=min_{P_R \in R_R(P)}\parallel P_R - \hat{P_R}\parallel$==
+==Second, $$\mathcal{L}_{ori2}=min_{P_R \in R_R(P)}\parallel P_R - \hat{P_R}\parallel$$==
 
 ##### Network Architecture
 
