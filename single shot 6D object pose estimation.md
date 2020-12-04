@@ -54,7 +54,7 @@ $$\mathcal{L}=\sum_{i=1}^{s^2}(\lambda_1(p_i - \hat{p_i})^2 + [\lambda_2(v_i - \
 
 To stabilize the training, the posotion $x=[x,y,z]^{T}$ of the object is estimated relative to the volume element,i.e. $x,y,z\in(0,1)$, while $z$ is the position between the near and far clipping plane of the 3D sensor.
 
-$$\mathcal{L}_{pos}=||x-\hat{x}||^2$$, with $||.||$ being the $L^2$ norm.
+$$\mathcal{L}_{pos}=||x-\hat{x}||^2$$, with $$||.||$$ being the $L^2$ norm.
 
 $\mathcal{L}_{ori1}=\parallel \phi - \hat{\phi} \parallel^2, \lambda_4=1$, with $\varphi=[\varphi_1, \varphi_2, \varphi_3]$
 
