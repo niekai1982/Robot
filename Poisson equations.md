@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 Poisson equations
 
 
+=======
+### Poisson equations
+
+> image editing
+>>>>>>> 0d502378e691e10cd263b787d68972871b781e2d
 
 Equilibrium 均衡
 
@@ -10,7 +16,11 @@ Ohm's Law: $V_+ - V_- = I * R$
 
 Voltage Change(volts) = Current(amps)*Resistance(ohms)
 
+<<<<<<< HEAD
 <img src="/Users/kainie/Library/Application Support/typora-user-images/image-20201205170350376.png" alt="image-20201205170350376" style="zoom:30%;" />
+=======
+
+>>>>>>> 0d502378e691e10cd263b787d68972871b781e2d
 
 <img src="image-20201207171857103.png" alt="image-20201207171857103" style="zoom:50%;" />
 
@@ -44,9 +54,15 @@ First, it is well known to psychologist that **slow gradient of intensity**(slow
 
 #### Key words
 
+<<<<<<< HEAD
 - Gradient $v=(u,v)=\triangledown g$
 - Laplacian $\triangle f = \frac{\partial^2f}{\partial x^2} + \frac{\partial^2}{\partial y^2}$
 - Divergence $div\ v = \frac{\partial u}{\partial x} + \frac{\partial v}{\partial y}$
+=======
+- Gradient $v=(u,v)=\triangledown g$ , gradient is a vector
+- Laplacian $\triangle f = \frac{\partial^2f}{\partial x^2} + \frac{\partial^2}{\partial y^2}$, a scalar 
+- Divergence $div\ v = \frac{\partial u}{\partial x} + \frac{\partial v}{\partial y}$, a scalar
+>>>>>>> 0d502378e691e10cd263b787d68972871b781e2d
 
 - **Vector Field**，将空间每个点指派到一个向量的映射。设*X*是$R^n$里的一个连通开集，一个**向量场**就是一个向量函数$ \mathbf {F}:\mathcal(X)\rightarrow R^n$。如果F在*X*上是*k*次连续可微的，称F为一个$C^k$向量场。在X内，若$\mathbf{F}(x)=0$,则点x称为固定的。向量场可以理解为一个n位空间，其中对X内每一个点都有附着的n维向量
 
