@@ -16,7 +16,7 @@
 
 #### Parameters of depth camera
 
-> Device 0: 003008302912
+> **Device 0: 003008302912**
 
 resolution width: 640
 resolution height: 576
@@ -35,6 +35,29 @@ center of distortion in Z=1 plane(**cod_x**), x: 0.000000
 center of distortion in Z=1 plane(**cod_y**), y: 0.000000
 tangential distortion coefficient x(**p1**): -0.000066
 tangential distortion coefficient y(**p2**): 0.000057
+metric radius: 0.000000
+
+
+
+> **Device 0: 000204103712**
+
+resolution width: 640
+resolution height: 576
+principal point x: 326.133362
+principal point y: 328.915558
+focal length x: 503.709351
+focal length y: 503.845337
+radial distortion coefficients:
+k1: 0.267702
+k2: -0.077208
+k3: -0.002675
+k4: 0.607297
+k5: -0.059075
+k6: -0.019290
+center of distortion in Z=1 plane, x: 0.000000
+center of distortion in Z=1 plane, y: 0.000000
+tangential distortion coefficient x: 0.000038
+tangential distortion coefficient y: -0.000124
 metric radius: 0.000000
 
 ----
