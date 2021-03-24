@@ -4,9 +4,11 @@
 
 \* You are not using the position information gathered with your system for the robot process, e.g. correction of base frames? 
 
-- We use forward transformation to determination robot postion and align the robot position information with frame.
+- We use forward transformation to determination robot postion.
 
 \* Humans can’t access the area. Is this correct? Otherwise can you please try to explain what you are using your system for?
+
+- In principle, humans are prohibited from entering the area,.But, in fact,  the area is not completely physically isolated, there has probability of human invasion. 
 
 
 
@@ -31,7 +33,7 @@
 
  \*  what is needed for commissioning:
 
-- what do you mean for the word "commissioning"
+- We need arrange a meeting to discuss. 
 
   \*  how to calibrate
 
@@ -47,9 +49,9 @@
 
   \*  how to train parts
 
-- what do you mean by "train parts"
+- what do you mean by "train parts", which parts?
 
-- If you mean how to train the model, over 500 car images in 8 different color and 3 types were used to train our segmentation models
+- If you mean how to train the model, over 500 car images in 8 different color and 3 types were used to train our segmentation models.
 
 <img src="/Users/kainie/Library/Application Support/typora-user-images/image-20210202160006891.png" alt="image-20210202160006891" style="zoom: 50%;" />
 
@@ -67,11 +69,11 @@
 
   \*  interfaces
 
-- Hardware interface: color camer, depth camera, PLC
+- Hardware interface: color camera, depth camera, PLC, **Industrial internet**
 
  \*  Can we use it for other applications, e.g. for tracking (detect position of a car on a conveyor and send the information to a robot controller in real-time?)
 
-- Our car segmentation and location module can be generalized to these scenes.
+- Our car segmentation and location module can be generalized to these scenes.As for the real time, we need to check the hardware configuration(CPU, GPU,...)
 
 
 
@@ -88,37 +90,37 @@
 
   \*  You mentioned a reaction time of 300ms – does this include the robot reaction time and stopping motion?
 
-- 300ms is just  time consuming of collision detection algorithm, not include the robot reaction time.
+- 300ms  just  including collision detection algorithm, not  the robot reaction time.
 
   \*  How do you get the safety signals into the robot controller? Do you use a safety BUS? Do you need a PLC?
 
-????
+- We using the Profinet protocol to send safety signal to the robot controller.
 
   \*  Which is the external certifying body for approval of the safety?
 
-- 
+- We install the distance sensor(single-line Lidar ) on the gripper to ensure the safety.
 
   \*  Which safety functions do you plan on offering? E.g. stop the robot, move away, alert the users, …?
 
-
+- We offer the following functions, stop the robot, alert user. 
 
   \*  How do you handle light issues? (e.g. too much or too little light)
 
-
+- The quality of point cloud mainly depends on the reflectivity of the object.
 
 #### General questions
 
   \*  What would be an estimated price for a customer?
 
-
+- ????
 
   \*  How long do you need for the setup of the system in a new environment? (New place as well as new cars in the scene)
 
-
+- One month.
 
   \*  Who would set up the system in the future? Is it designed to be used by the customer? Do you need a system integrator to set it up?
 
-
+- We need a system integrator to set up the system for the customer.
 
   \*  What is the measurement principle for the point cloud? Do you use time of flight cameras?
 
@@ -126,5 +128,5 @@
 
   \*  Your system includes a CNN. Do you need to retrain that for new scenarios? How long does that take?
 
-- We only need about 500 samples to retrain 
+- We only need about 500 samples to retrain our segmentation model.In VW project, it take about  one week time.
 
