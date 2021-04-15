@@ -204,6 +204,18 @@ $Accuracy = Resolution \times Effective\ Pixels$
 
 
 
+![image-20210329093527009](image-20210329093527009.png)
+
+
+
+https://www.keyence.com.cn/ss/products/vision/visionbasics/basic/beginner/
+
+350:500=f:5.2
+
+
+
+
+
 #### Transformation
 
 

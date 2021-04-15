@@ -65,9 +65,33 @@ https://mp.weixin.qq.com/s?__biz=MzA5MDE2MjQ0OQ==&mid=2652786821&idx=1&sn=297af3
 
 Template Matching
 
+<img src="image-20210326152857970.png" alt="image-20210326152857970" style="zoom: 67%;" />
+
+
+
+###### 商用软件
+
+- **Halcon**
+  - 在商业的视觉软件中，halcon的shape-based match和cognex的patmax算法可以满足你的需要，他们都是轮廓匹配算法，可以抗旋转、缩放和部分遮挡而且精度是亚像素。
+  - halcon的轮廓匹配算法是通过边缘的梯度方向和梯度值计算匹配度，根据设定的旋转步长和缩放系数预先建立各个角度和缩放比例下的模板，是一种穷举方法，因此如果写的不好算法是十分耗时的。
+
+- **VisionPro**
+- **PatMax**
+- **OpenVision**
+
+
+
+###### Methods
+
 - LineMod
 
-> Lined 与shape based matching 同宗同源, https://zhuanlan.zhihu.com/p/45538349
+  >Hinterstoisser S, Holzer S, Cagniart C, et al. Multimodaltemplates for real-time detection of texture-less objects in heavily clutteredscenes[C]// International Conference on Computer Vision. IEEE Computer Society,2011:858-865.
+
+  - Lined 与shape based matching 同宗同源, https://zhuanlan.zhihu.com/p/45538349
+  - shape-based matching只用**梯度方向**，也就是说不管你用什么花样的算法，**当你开始提边缘时你就输了**。这是因为边缘和梯度方向虽然都不易被干扰，但一个边缘只有有无边缘**1bit**的信息量，一旦提多了很难找出想要的形状。
+  - linemod正是这样，简单来说就是选几十个点的梯度方向拿去在图像中进行方向的模板匹配，经过一系列奇巧淫技加速，最终100万像素处理图像耗时60ms，**匹配360个模版才7ms**
+
+
 
 ##### 深度学习
 
