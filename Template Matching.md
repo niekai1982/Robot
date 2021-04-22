@@ -130,3 +130,4 @@ Class ColorGradientPytramid
 
 
 ![image-20210414233531229](image-20210414233531229.png)
+
