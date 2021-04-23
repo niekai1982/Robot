@@ -37,6 +37,8 @@ The goal of template matching:
 
 - Similarity Measure
 
+Seteger in [C. Steger, “Occlusion Clutter, and Illumination Invariant Object Recognition,” in International Archives of Photogrammetry and Remote Sensing, 2002.] defined similarity measure method to **be robust to small translations and deformations**.
+
 $$
 
 
