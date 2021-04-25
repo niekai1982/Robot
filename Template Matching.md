@@ -54,6 +54,7 @@ line3Dup::Detector detector(30,{4,8})
 ```
 
 - **Detector initialize**
+
   - int num_features = 30
 
   - vector T = {4, 8}
@@ -132,4 +133,14 @@ Class ColorGradientPytramid
 
 
 ![image-20210414233531229](image-20210414233531229.png)
+
+
+
+![image-20210425183048923](image-20210425183048923.png)
+
+
+
+![image-20210425183305695](image-20210425183305695.png)
+
+![image-20210425184050164](image-20210425184050164.png)
 
