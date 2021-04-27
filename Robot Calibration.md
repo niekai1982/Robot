@@ -85,6 +85,10 @@ DOF(degrees of freedom) of a kinematic chain
 
 
 
+![image-20210426141830124](image-20210426141830124.png)
+
+
+
 <img src="image-20210122112040446.png" alt="image-20210122112040446" style="zoom: 50%;" />
 
 
